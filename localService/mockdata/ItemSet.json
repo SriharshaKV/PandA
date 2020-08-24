@@ -1,0 +1,141 @@
+[{
+	"Vbeln": "Vbeln 1",
+	"Vsbed": "Vsbed 1",
+	"Matnr": "Matnr 1",
+	"Kwmeng": 663.43,
+	"Kdmat": "Kdmat 1",
+	"Ean11": "Ean11 1",
+	"Icrdd": "/Date(1566573857000)/",
+	"Werks": "Werks 1",
+	"Meinh": "Meinh 1",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%201')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 2",
+	"Vsbed": "Vsbed 2",
+	"Matnr": "Matnr 2",
+	"Kwmeng": 8028.19,
+	"Kdmat": "Kdmat 2",
+	"Ean11": "Ean11 2",
+	"Icrdd": "/Date(1448465057000)/",
+	"Werks": "Werks 2",
+	"Meinh": "Meinh 2",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%202')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 3",
+	"Vsbed": "Vsbed 3",
+	"Matnr": "Matnr 3",
+	"Kwmeng": 4696.66,
+	"Kdmat": "Kdmat 3",
+	"Ean11": "Ean11 3",
+	"Icrdd": "/Date(1499354657000)/",
+	"Werks": "Werks 3",
+	"Meinh": "Meinh 3",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%203')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 4",
+	"Vsbed": "Vsbed 4",
+	"Matnr": "Matnr 4",
+	"Kwmeng": 7664.54,
+	"Kdmat": "Kdmat 4",
+	"Ean11": "Ean11 4",
+	"Icrdd": "/Date(1095953057000)/",
+	"Werks": "Werks 4",
+	"Meinh": "Meinh 4",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%204')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 5",
+	"Vsbed": "Vsbed 5",
+	"Matnr": "Matnr 5",
+	"Kwmeng": 4153.85,
+	"Kdmat": "Kdmat 5",
+	"Ean11": "Ean11 5",
+	"Icrdd": "/Date(1460733857000)/",
+	"Werks": "Werks 5",
+	"Meinh": "Meinh 5",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%205')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 6",
+	"Vsbed": "Vsbed 6",
+	"Matnr": "Matnr 6",
+	"Kwmeng": 4866.45,
+	"Kdmat": "Kdmat 6",
+	"Ean11": "Ean11 6",
+	"Icrdd": "/Date(955293857000)/",
+	"Werks": "Werks 6",
+	"Meinh": "Meinh 6",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%206')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 7",
+	"Vsbed": "Vsbed 7",
+	"Matnr": "Matnr 7",
+	"Kwmeng": 6337.39,
+	"Kdmat": "Kdmat 7",
+	"Ean11": "Ean11 7",
+	"Icrdd": "/Date(1039533857000)/",
+	"Werks": "Werks 7",
+	"Meinh": "Meinh 7",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%207')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 8",
+	"Vsbed": "Vsbed 8",
+	"Matnr": "Matnr 8",
+	"Kwmeng": 5513.25,
+	"Kdmat": "Kdmat 8",
+	"Ean11": "Ean11 8",
+	"Icrdd": "/Date(1052493857000)/",
+	"Werks": "Werks 8",
+	"Meinh": "Meinh 8",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%208')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 9",
+	"Vsbed": "Vsbed 9",
+	"Matnr": "Matnr 9",
+	"Kwmeng": 2939.27,
+	"Kdmat": "Kdmat 9",
+	"Ean11": "Ean11 9",
+	"Icrdd": "/Date(1556724257000)/",
+	"Werks": "Werks 9",
+	"Meinh": "Meinh 9",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%209')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}, {
+	"Vbeln": "Vbeln 10",
+	"Vsbed": "Vsbed 10",
+	"Matnr": "Matnr 10",
+	"Kwmeng": 3260.25,
+	"Kdmat": "Kdmat 10",
+	"Ean11": "Ean11 10",
+	"Icrdd": "/Date(1452007457000)/",
+	"Werks": "Werks 10",
+	"Meinh": "Meinh 10",
+	"__metadata": {
+		"uri": "ItemSet('Vbeln%2010')",
+		"type": "ZSAPA_SRV.Item"
+	}
+}]

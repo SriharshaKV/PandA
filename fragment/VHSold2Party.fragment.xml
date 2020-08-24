@@ -1,0 +1,41 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<TableSelectDialog noDataText="No Sold-To-Party found" items="{Customer>/d/results}" title="Select Sold-To-Party"
+		search="vhSoldToPartySearch" liveChange="vhSoldToPartySearch" confirm="vhSoldToPartyConfirm" cancel="vhSoldToPartyConfirm" contentWidth="600px">
+		<ColumnListItem>
+			<cells>
+				<Text text="{Customer>Kunnr}"/>
+				<Text text="{Customer>Mcod1}"/>
+				<Text text="{Customer>Mcod3}"/>
+				<Text text="{Customer>Land1}"/>
+				<Text text="{Customer>Sortl}"/>
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column>
+				<header>
+					<Label text="Customer" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Name" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="City" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Country" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Sort" design="Bold"/>
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>

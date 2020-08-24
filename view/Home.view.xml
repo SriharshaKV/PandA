@@ -1,0 +1,256 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:t="sap.ui.table" controllerName="comZSAPR.controller.Home" displayBlock="true">
+	<Page title="{i18n>title}" showHeader="false">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:Form id="id_inputForm" editable="true">
+					<f:title>
+						<core:Title text="Header Data"/>
+					</f:title>
+					<f:layout>
+						<f:ResponsiveGridLayout labelSpanXL="1" labelSpanL="1" labelSpanM="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0"
+							emptySpanS="0" columnsXL="4" columnsL="4" columnsM="2" singleContainerFullSize="false"/>
+					</f:layout>
+					<f:formContainers>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement>
+									<label text="Document Type:" textAlign="Right" required="true" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<Input id="id_docType" showValueHelp="true" valueHelpRequest="onVHSalesDocType" value="{/docType}"></Input>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<label text="Sales Org:" textAlign="Right" required="true" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<Input id="id_salOrg" showValueHelp="true" valueHelpRequest="onVHSalesOrg" value="{/salOrg}"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<label text="Pricing Date:" textAlign="Right" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<DatePicker id="id_PD" displayFormat="long" valueFormat="yyyyMMdd" value="{path:'/priDat'}" change="onPricingDateChange"/>
+									</f:fields>
+								</f:FormElement>
+							</f:formElements>
+						</f:FormContainer>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement>
+									<label text="Distribution Channel:" textAlign="Right" required="true" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<Input id="id_disChnl" showValueHelp="true" valueHelpRequest="onVHDistibutionChnl" value="{/disChn}"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement >
+									<label text="Division:" textAlign="Right" required="true" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<Input id="id_division" showValueHelp="true" valueHelpRequest="onVHDivision" value="{/div}"/>
+									</f:fields>
+								</f:FormElement>
+							</f:formElements>
+						</f:FormContainer>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement>
+									<label text="Sold-To-Party:" required="true" textAlign="Right" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<Input id="id_sol2Party" placeholder="Enter Sold To Party..." showSuggestion="true" showTableSuggestionValueHelp="true"
+											suggestionRows="{Customer>/d/results}" showValueHelp="true" valueHelpRequest="onVHSol2Party" value="{/sol2Par}" maxSuggestionWidth="70%">
+											<suggestionColumns>
+												<Column hAlign="Begin">
+													<Label text="Customer"/>
+												</Column>
+												<Column hAlign="Center">
+													<Label text="Name"/>
+												</Column>
+												<Column hAlign="Center">
+													<Label text="City"/>
+												</Column>
+												<Column hAlign="End">
+													<Label text="Country"/>
+												</Column>
+												<Column hAlign="End">
+													<Label text="Sort"/>
+												</Column>
+											</suggestionColumns>
+											<suggestionRows>
+												<ColumnListItem>
+													<cells>
+														<Label text="{Customer>Kunnr}"/>
+														<Label text="{Customer>Mcod1}"/>
+														<Label text="{Customer>Mcod3}"/>
+														<Label text="{Customer>Land1}"/>
+														<Label text="{Customer>Sortl}"/>
+													</cells>
+												</ColumnListItem>
+											</suggestionRows>
+										</Input>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<label text="Ship-To-Party:" textAlign="Right" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<Input id="id_shp2Party" placeholder="Enter Ship To Party..." showValueHelp="true" valueHelpRequest="onVHShp2Party" value="{/shp2Par}"
+											showSuggestion="true" showTableSuggestionValueHelp="true" suggestionRows="{Customer2>/d/results}" maxSuggestionWidth="70%">
+											<suggestionColumns>
+												<Column hAlign="Begin">
+													<Label text="Customer"/>
+												</Column>
+												<Column hAlign="Center">
+													<Label text="Name"/>
+												</Column>
+												<Column hAlign="Center">
+													<Label text="City"/>
+												</Column>
+												<Column hAlign="End">
+													<Label text="Country"/>
+												</Column>
+												<Column hAlign="End">
+													<Label text="Sort"/>
+												</Column>
+											</suggestionColumns>
+											<suggestionRows>
+												<ColumnListItem>
+													<cells>
+														<Label text="{Customer2>Kunnr}"/>
+														<Label text="{Customer2>Mcod1}"/>
+														<Label text="{Customer2>Mcod3}"/>
+														<Label text="{Customer2>Land1}"/>
+														<Label text="{Customer2>Sortl}"/>
+													</cells>
+												</ColumnListItem>
+											</suggestionRows>
+										</Input>
+									</f:fields>
+								</f:FormElement>
+							</f:formElements>
+						</f:FormContainer>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement>
+									<label text="Shipping Condition:" textAlign="Right" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<!--<Input id="id_shipCon" showValueHelp="true" valueHelpRequest="onVHShpngCondition" value="{/shpCon}"/>-->
+										<ComboBox id="id_shipCon" value="{/shpCon}" showSecondaryValues="true">
+											<core:ListItem text="01" key="01" additionalText="Standard"/>
+											<core:ListItem text="03" key="03" additionalText="Express"/>
+										</ComboBox>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<label text="Requ Delivery Date:" textAlign="Right" class="sapUiTinyMarginTop"/>
+									<f:fields>
+										<DatePicker id="id_DP1" displayFormat="long" valueFormat="yyyyMMdd" value="{path:'/reqDat'}" change="onDeliveryDateChange"/>
+									</f:fields>
+								</f:FormElement>
+							</f:formElements>
+						</f:FormContainer>
+					</f:formContainers>
+				</f:Form>
+			</VBox>
+			<t:Table id="id_itemTable" rows="{/items}" class="sapUiSmallMargin">
+				<t:extension>
+					<OverflowToolbar>
+						<Title id="title" text="Item Data"/>
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://add" tooltip="Add New Row" press="onAddRow"/>
+						<Button icon="sap-icon://sys-minus" tooltip="Delete Selected Row" press="onDeleteRow"/>
+					</OverflowToolbar>
+				</t:extension>
+				<t:columns>
+					<t:Column>
+						<Label text="Material" design="Bold"/>
+						<t:template>
+							<Input value="{mat}" showValueHelp="true" valueHelpRequest="onVHMaterial" maxSuggestionWidth="35%" showSuggestion="true"
+								suggestionItems="{MaterialJ>/d/results}">
+								<suggestionItems>
+									<core:ListItem text="{MaterialJ>Matnr}" additionalText="{MaterialJ>Maktg}"/>
+								</suggestionItems>
+							</Input>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="Order Quantity" design="Bold"/>
+						<t:template>
+							<Input value="{path:'quan',type:'sap.ui.model.type.String'}" required="true" liveChange="onQuanUpdate"/>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="Plant" design="Bold"/>
+						<t:template>
+							<!--<Input value="{plant}" showValueHelp="true" valueHelpRequest="onVHPlant"/>-->
+							<ComboBox value="{plant}" showSecondaryValues="true">
+								<core:ListItem text="" key="" additionalText=""/>
+								<core:ListItem text="US38" key="US38" additionalText="MECHANICSBURG Distribution Center"/>
+								<core:ListItem text="US31" key="US31" additionalText="ATHENS Distribution Center"/>
+								<core:ListItem text="US33" key="US33" additionalText="CHINO Distribution Center"/>
+								<core:ListItem text="US34" key="US34" additionalText="Atlanta 3PL Distribution Center"/>
+							</ComboBox>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="Req Delivery Date" design="Bold"/>
+						<t:template>
+							<DatePicker value="{delDate}" displayFormat="long" valueFormat="yyyyMMdd" placeholder="Requested Delivery Date"
+								change="onDeliveryDateChange"/>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="Shipping Condition" design="Bold"/>
+						<t:template>
+							<!--<Input value="{shpCon}" showValueHelp="true" valueHelpRequest="onVHShpngCondition"/>-->
+							<ComboBox value="{shpCon}" showSecondaryValues="true" selectionChange="onItemShpCondChg">
+								<core:ListItem text="01" key="01" additionalText="Standard"/>
+								<core:ListItem text="03" key="03" additionalText="Express"/>
+							</ComboBox>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="Route" design="Bold"/>
+						<t:template>
+							<!--<Input value="{route}" showValueHelp="true" valueHelpRequest="onVHRoute" editable="{=${shpCon} === '03'}"/>-->
+							<ComboBox value="{route}" showSecondaryValues="true" editable="{=${shpCon} === '03'}">
+								<core:ListItem text="USFDXO" key="USFDXO" additionalText="FED EX 1 DAY HEAVYWEIGHT AIR FRT"/>
+								<core:ListItem text="USFDXT" key="USFDXT" additionalText="FED EX 2 DAY HEAVYWEIGHT AIR FRT"/>
+								<core:ListItem text="USFEDL" key="USFEDL" additionalText="FEDERAL EXPRESS PRIORITY ONE"/>
+								<core:ListItem text="USFEDS" key="USFEDS" additionalText="FEDEX 2ND DAY"/>
+								<core:ListItem text="USFEDT" key="USFEDT" additionalText="FEDEX 3RD DAY"/>
+								<core:ListItem text="USFEDW" key="USFEDW" additionalText="FEDEX SAT DELIVERY"/>
+								<core:ListItem text="USFEDX" key="USFEDX" additionalText="FED EX 3 DAY HEAVYWEIGHT AIR FRT"/>
+								<core:ListItem text="USNDUP" key="USNDUP" additionalText="NEXT DAY DELIVERY UPS RED"/>
+								<core:ListItem text="USNSAT" key="USNSAT" additionalText="UPS RED NEXT DAY SAT DELY"/>
+								<core:ListItem text="USUPBL" key="USUPBL" additionalText="UPS BLUE LABEL"/>
+								<core:ListItem text="USUPOD" key="USUPOD" additionalText="UPS ORANGE 3RD DAY"/>
+								<core:ListItem text="USUPSF" key="USUPSF" additionalText="UPS SUPPLY CHAIN SOLUTIONS - NGS"/>
+								<core:ListItem text="USUP2D" key="USUP2D" additionalText="UPS SPLY CHAIN 2 DAY FREIGHT NGS"/>
+								<core:ListItem text="USNDAE" key="USNDAE" additionalText="UPS NEXT DAY AIR EARLY AM FLAGSHIP"/>
+							</ComboBox>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="Customer Material Number" design="Bold"/>
+						<t:template>
+							<Input type="Text" value="{cusMat}" showValueHelp="true" valueHelpRequest="onVHCustomerMaterial"/>
+							<!--<Input value="{cusMat}"/>-->
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="EAN/UPC" design="Bold"/>
+						<t:template>
+							<Input value="{EAN}" showValueHelp="true" valueHelpRequest="onVHEAN"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<Button id="messagePopoverBtn" icon="sap-icon://message-error" type="Reject" press="handleMessagePopoverPress"
+					visible="{=!!${messages>/}.length}"/>
+				<ToolbarSpacer/>
+				<Button text="Check Price &amp; Availability" press="onSimulate" type="Emphasized"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,222 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	controllerName="comZSAPR.controller.Result" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page showHeader="false" showNavButton="true" enableScrolling="true" navButtonPress="onNavBack" class="sapUiContentPadding"
+		title="{i18n>title}">
+		<content>
+			<Panel class="sapUiSmallMargin">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="Header Data"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				<content>
+					<f:Form id="id_outputForm">
+						<f:layout>
+							<f:ResponsiveGridLayout labelSpanXL="1" labelSpanL="1" labelSpanM="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0"
+								emptySpanS="0" columnsXL="4" columnsL="4" columnsM="2" singleContainerFullSize="true"/>
+						</f:layout>
+						<f:formContainers>
+							<f:FormContainer>
+								<f:formElements>
+									<f:FormElement>
+										<label text="Document Type :" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2DocType" text="{Inputs>/docType}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement>
+										<label text="Sales Org:" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2salOrg" text="{Inputs>/salOrg}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement>
+										<label text="Distribution Channel:" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2disChnl" text="{Inputs>/disChn}"/>
+										</f:fields>
+									</f:FormElement>
+								</f:formElements>
+							</f:FormContainer>
+							<f:FormContainer>
+								<f:formElements>
+									<f:FormElement>
+										<label text="Division:" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2division" text="{Inputs>/div}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement>
+										<label text="Sold-To-Party:" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2Sol2Type" text="{Inputs>/sol2Par}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement>
+										<label text="Ship-To-Party:" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2Shp2Type" text="{Inputs>/shp2Par}"/>
+										</f:fields>
+									</f:FormElement>
+								</f:formElements>
+							</f:FormContainer>
+							<f:FormContainer>
+								<f:formElements>
+									<f:FormElement>
+										<label text="Shipping Condition:" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2ShpCond" text="{Inputs>/shpCon}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement>
+										<label text="Requ Delivery Date:" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2Reqdate" text="{Inputs>/reqDat}"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement>
+										<label text="Pricing Date:" textAlign="Right"/>
+										<f:fields>
+											<Text id="id_2Pricingdate" text="{Inputs>priDat}"/>
+										</f:fields>
+									</f:FormElement>
+								</f:formElements>
+							</f:FormContainer>
+							<f:FormContainer>
+								<f:formElements>
+									<f:FormElement>
+										<label text="Sales Order:" textAlign="Right" design="Bold"/>
+										<f:fields>
+											<!--<Text id="id_SalesOrder"/>-->
+											<Link id="id_SalesOrder" press="onNavigateVA03" emphasized="true"/>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement>
+										<label text="Cust. Reference:" textAlign="Right" design="Bold"/>
+										<f:fields>
+											<!--<Text id="id_SalesOrder"/>-->
+											<Text id="id_PO"/>
+										</f:fields>
+									</f:FormElement>
+								</f:formElements>
+							</f:FormContainer>
+						</f:formContainers>
+					</f:Form>
+				</content>
+			</Panel>
+			<t:Table id="id_resultTable" rows="{/results}">
+				<t:extension>
+					<OverflowToolbar>
+						<Title id="title2" text="Price &amp; Availability Results"/>
+						<ToolbarSpacer/>
+						<Button text="Excel" icon="sap-icon://excel-attachment" press="onExportToExcel"/>
+					</OverflowToolbar>
+				</t:extension>
+				<t:rowSettingsTemplate>
+					<t:RowSettings highlight="{path:'MsgType',formatter:'.formatter.setRowSetting'}"/>
+				</t:rowSettingsTemplate>
+				<t:columns>
+					<t:Column width="5rem" sortProperty="Posnr">
+						<Label text="Item No" design="Bold"/>
+						<t:template>
+							<Text text="{Posnr}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="20rem" sortProperty="Matnr">
+						<Label text="Material" design="Bold"/>
+						<t:template>
+							<Link text="{parts:[{path:'Matnr'},{path:'Matdesc'}],formatter:'.formatter.concatPlantname'}" wrapping="true" emphasized="true"
+								press="onMatnrClick"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="15rem" sortProperty="Werks">
+						<Label text="Plant" design="Bold"/>
+						<t:template>
+							<Text text="{parts:[{path:'Werks'},{path:'Plantdesc'}],formatter:'.formatter.concatPlantname'}"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="15rem" sortProperty="Route">
+						<Label text="Route" design="Bold"/>
+						<t:template>
+							<Text text="{Route}"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="7rem" sortProperty="OrderQty" hAlign="End">
+						<Label text="Ord Quan" design="Bold"/>
+						<t:template>
+							<ObjectNumber number="{OrderQty}" unit="{Vrkme}"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="10rem" sortProperty="ConfirQty" hAlign="End">
+						<Label text="Confirmed Quan" design="Bold"/>
+						<t:template>
+							<!--<ObjectNumber number="{ConfirQty}" unit="{Vrkme}"/>-->
+							<Link emphasized="true" text="{parts:[{path:'ConfirQty'},{path:'Vrkme'}],formatter:'.formatter.netPriceFormatter'}" press="onUnconfirmQuan"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="12rem">
+						<Label text="Availability" design="Bold"/>
+						<t:template>
+							<ProgressIndicator percentValue="{parts:[{path:'ConfirQty'},{path:'OrderQty'}],formatter:'.formatter.calculateAvailability'}"
+								displayValue="{parts:[{path:'ConfirQty'},{path:'OrderQty'}],formatter:'.formatter.calculateAvailabilityDisplay'}" showValue="true"
+								state="{parts:[{path:'ConfirQty'},{path:'OrderQty'}],formatter:'.formatter.calculateState'}" displayOnly="true"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="9rem" sortProperty="Crd">
+						<Label text="Cust.Requ.Date" design="Bold"/>
+						<t:template>
+							<ObjectNumber number="{path:'Crd',formatter:'.formatter.setMediumDate'}"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="7rem" sortProperty="Edatu">
+						<Label text="Delivery Date" design="Bold"/>
+						<t:template align="Center">
+							<Link emphasized="true" text="{path:'Edatu',formatter:'.formatter.setMediumDate'}" press="onDeliveryDate"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="7rem" sortProperty="Kwert" hAlign="End">
+						<Label text="Net Price" design="Bold"/>
+						<t:template hAlign="End">
+							<Link emphasized="true" text="{parts:[{path:'Kwert'},{path:'Waerk'}],formatter:'.formatter.netPriceFormatter'}" press="onNetprice"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="7rem" sortProperty="Vsbed">
+						<Label text="Shipping Condition" design="Bold"/>
+						<t:template>
+							<Text text="{Vsbed}"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="10rem" sortProperty="MatEntrd">
+						<Label text="Entered Material" design="Bold"/>
+						<t:template>
+							<Text text="{MatEntrd}"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="10rem" sortProperty="Kdmat">
+						<Label text="Customer Material" design="Bold"/>
+						<t:template>
+							<Text text="{Kdmat}"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="10rem">
+						<Label text="Message" design="Bold"/>
+						<t:template>
+							<Link text="Click here to view Message" press="handleMessageClick">
+								<customData>
+									<core:CustomData key="mesg" value="{Log}"></core:CustomData>
+									<core:CustomData key="mesgType" value="{MsgType}"></core:CustomData>
+								</customData>
+							</Link>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button id="id_Create" text="Create Sales Order" type="Accept" press="callPODialog"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

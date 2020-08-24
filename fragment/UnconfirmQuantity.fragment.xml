@@ -1,0 +1,34 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog title="Non Confirmed Quantity Lines" contentWidth="500px">
+		<content>
+			<!--<TableSelectDialog noDataText="" items="{Unconfirm>/oData}" title="Unconfirmed Quantity Dates"-->
+			<!--	contentWidth="500px" contentHeight="500px">-->
+			<Table items="{Unconfirm>/}" noDataText="No Non Confirmed Quantity Lines Found">
+				<ColumnListItem>
+					<cells>
+						<ObjectNumber number="{Unconfirm>unQuan}" unit="{Unconfirm>uom}"/>
+						<Text text="{path:'Unconfirm>date1',formatter:'.formatter.setMediumDate'}"/>
+					</cells>
+				</ColumnListItem>
+				<columns>
+					<Column>
+						<header>
+							<Label text="Non Confirm Qty" design="Bold"/>
+						</header>
+					</Column>
+					<Column>
+						<header>
+							<Label text="Estd Delivery Date" design="Bold"/>
+						</header>
+					</Column>
+				</columns>
+			</Table>
+		</content>
+		<!--<beginButton>-->
+		<!--	<Button text="MM03" press="onMM03Btn"/>-->
+		<!--</beginButton>-->
+		<endButton>
+			<Button text="Close" press="UnconfirmClose"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

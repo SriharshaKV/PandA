@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog title="Schedule Line Date Details" contentWidth="500px">
+		<content>
+			<f:SimpleForm editable="true" singleContainerFullSize="true" layout="ResponsiveGridLayout" labelSpanS="7" emptySpanS="1">
+				<Label text="Delivery Date"/>
+				<Text text="{path:'Date>/Edatu',formatter:'.formatter.setMediumDate'}"/>
+				<Label text="Goods Issue Date"/>
+				<Text text="{path:'Date>/Gidate',formatter:'.formatter.setMediumDate'}"/>
+				<Label text="Loading Date"/>
+				<Text text="{path:'Date>/Lddat',formatter:'.formatter.setMediumDate'}"/>
+				<Label text="Material Availability Date"/>
+				<Text text="{path:'Date>/Mbdat',formatter:'.formatter.setMediumDate'}"/>
+				<Label text="Transportation Planning Date"/>
+				<Text text="{path:'Date>/Tddat',formatter:'.formatter.setMediumDate'}"/>
+			</f:SimpleForm>
+		</content>
+		<endButton>
+			<Button text="Close" press="dateDialogClose"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

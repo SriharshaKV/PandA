@@ -1,0 +1,251 @@
+[{
+	"Vbeln": "Vbeln 1",
+	"Hcrd": "/Date(1302017060000)/",
+	"Vkorg": "Vkorg 1",
+	"Vtweg": "Vtweg 1",
+	"Spart": "Spart 1",
+	"Auart": "Auart 1",
+	"Bstkd": "Bstkd 1",
+	"Kunnr": "Kunnr 1",
+	"Kunwe": "Kunwe 1",
+	"Vsbed": "Vsbed 1",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%201')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%201')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%201')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 2",
+	"Hcrd": "/Date(957713060000)/",
+	"Vkorg": "Vkorg 2",
+	"Vtweg": "Vtweg 2",
+	"Spart": "Spart 2",
+	"Auart": "Auart 2",
+	"Bstkd": "Bstkd 2",
+	"Kunnr": "Kunnr 2",
+	"Kunwe": "Kunwe 2",
+	"Vsbed": "Vsbed 2",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%202')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%202')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%202')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 3",
+	"Hcrd": "/Date(959268260000)/",
+	"Vkorg": "Vkorg 3",
+	"Vtweg": "Vtweg 3",
+	"Spart": "Spart 3",
+	"Auart": "Auart 3",
+	"Bstkd": "Bstkd 3",
+	"Kunnr": "Kunnr 3",
+	"Kunwe": "Kunwe 3",
+	"Vsbed": "Vsbed 3",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%203')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%203')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%203')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 4",
+	"Hcrd": "/Date(1044458660000)/",
+	"Vkorg": "Vkorg 4",
+	"Vtweg": "Vtweg 4",
+	"Spart": "Spart 4",
+	"Auart": "Auart 4",
+	"Bstkd": "Bstkd 4",
+	"Kunnr": "Kunnr 4",
+	"Kunwe": "Kunwe 4",
+	"Vsbed": "Vsbed 4",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%204')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%204')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%204')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 5",
+	"Hcrd": "/Date(1307978660000)/",
+	"Vkorg": "Vkorg 5",
+	"Vtweg": "Vtweg 5",
+	"Spart": "Spart 5",
+	"Auart": "Auart 5",
+	"Bstkd": "Bstkd 5",
+	"Kunnr": "Kunnr 5",
+	"Kunwe": "Kunwe 5",
+	"Vsbed": "Vsbed 5",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%205')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%205')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%205')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 6",
+	"Hcrd": "/Date(1233674660000)/",
+	"Vkorg": "Vkorg 6",
+	"Vtweg": "Vtweg 6",
+	"Spart": "Spart 6",
+	"Auart": "Auart 6",
+	"Bstkd": "Bstkd 6",
+	"Kunnr": "Kunnr 6",
+	"Kunwe": "Kunwe 6",
+	"Vsbed": "Vsbed 6",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%206')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%206')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%206')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 7",
+	"Hcrd": "/Date(1341415460000)/",
+	"Vkorg": "Vkorg 7",
+	"Vtweg": "Vtweg 7",
+	"Spart": "Spart 7",
+	"Auart": "Auart 7",
+	"Bstkd": "Bstkd 7",
+	"Kunnr": "Kunnr 7",
+	"Kunwe": "Kunwe 7",
+	"Vsbed": "Vsbed 7",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%207')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%207')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%207')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 8",
+	"Hcrd": "/Date(1489073060000)/",
+	"Vkorg": "Vkorg 8",
+	"Vtweg": "Vtweg 8",
+	"Spart": "Spart 8",
+	"Auart": "Auart 8",
+	"Bstkd": "Bstkd 8",
+	"Kunnr": "Kunnr 8",
+	"Kunwe": "Kunwe 8",
+	"Vsbed": "Vsbed 8",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%208')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%208')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%208')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 9",
+	"Hcrd": "/Date(1380122660000)/",
+	"Vkorg": "Vkorg 9",
+	"Vtweg": "Vtweg 9",
+	"Spart": "Spart 9",
+	"Auart": "Auart 9",
+	"Bstkd": "Bstkd 9",
+	"Kunnr": "Kunnr 9",
+	"Kunwe": "Kunwe 9",
+	"Vsbed": "Vsbed 9",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%209')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%209')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%209')/ResultSet"
+		}
+	}
+}, {
+	"Vbeln": "Vbeln 10",
+	"Hcrd": "/Date(1164900260000)/",
+	"Vkorg": "Vkorg 10",
+	"Vtweg": "Vtweg 10",
+	"Spart": "Spart 10",
+	"Auart": "Auart 10",
+	"Bstkd": "Bstkd 10",
+	"Kunnr": "Kunnr 10",
+	"Kunwe": "Kunwe 10",
+	"Vsbed": "Vsbed 10",
+	"__metadata": {
+		"uri": "HeaderSet('Vbeln%2010')",
+		"type": "ZSAPA_SRV.Header"
+	},
+	"ItemSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%2010')/ItemSet"
+		}
+	},
+	"ResultSet": {
+		"__deferred": {
+			"uri": "HeaderSet('Vbeln%2010')/ResultSet"
+		}
+	}
+}]

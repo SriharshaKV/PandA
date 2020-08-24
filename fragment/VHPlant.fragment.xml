@@ -1,0 +1,6 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog title="Plants" noDataText="No Plants found" items="{Plant>/d/results}" class="sapUiPopupWithPadding" search="vhPlantSearch"
+		liveChange="vhPlantSearch" confirm="vhPlantConfrim">
+		<StandardListItem title="{Plant>Werks}" description="{Plant>Name1}"></StandardListItem>
+	</SelectDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,6 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog title="Sales Organization" noDataText="No Sales Organization found" items="{SaleOrg>/d/results}" class="sapUiPopupWithPadding"
+		search="vhSaleOrgSearch" liveChange="vhSaleOrgSearch" confirm="vhSaleOrgConfrim">
+		<StandardListItem title="{SaleOrg>Vkorg}" description="{SaleOrg>Vtext}"></StandardListItem>
+	</SelectDialog>
+</core:FragmentDefinition>

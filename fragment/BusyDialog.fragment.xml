@@ -1,0 +1,4 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<BusyDialog title="Processing Price &amp; Availability" text="Price &amp; Availability is in Progress" showCancelButton="true"
+		close="onDialogClosed"/>
+</core:FragmentDefinition>

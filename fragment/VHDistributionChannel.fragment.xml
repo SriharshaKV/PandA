@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<TableSelectDialog noDataText="No Distibution Channel found" items="{DistChnl>/d/results}" title="Select Distibution Channel"
+		search="vhDistributionChnlSearch" liveChange="vhDistributionChnlSearch" confirm="vhDistributionChnlConfrim" cancel="vhDistributionChnlConfrim" contentWidth="600px">
+		<ColumnListItem>
+			<cells>
+				<Text text="{DistChnl>Vkorg}"/>
+				<Text text="{DistChnl>Vtweg}"/>
+				<Text text="{DistChnl>Vtext}"/>
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column>
+				<header>
+					<Label text="Sales Organization" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Distribution Channel" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Description" design="Bold"/>
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>

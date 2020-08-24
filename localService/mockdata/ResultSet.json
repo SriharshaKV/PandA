@@ -1,0 +1,201 @@
+[{
+	"Netwr": 8813.92,
+	"Posnr": "Posnr 1",
+	"Kwert": 5187.67,
+	"Matnr": "Matnr 1",
+	"Kdmat": "Kdmat 1",
+	"Waerk": "Waerk 1",
+	"Aumng": 8678.86,
+	"Werks": "Werks 1",
+	"OrderQty": 2721.52,
+	"ConfirQty": 9500.76,
+	"Crd": "/Date(981645855000)/",
+	"Edatu": "/Date(1151249055000)/",
+	"Mbdat": "/Date(1511709855000)/",
+	"Gidate": "/Date(1214061855000)/",
+	"Vrkme": "Vrkme 1",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%201')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 6265.4,
+	"Posnr": "Posnr 2",
+	"Kwert": 8093.9,
+	"Matnr": "Matnr 2",
+	"Kdmat": "Kdmat 2",
+	"Waerk": "Waerk 2",
+	"Aumng": 2970.27,
+	"Werks": "Werks 2",
+	"OrderQty": 1418.64,
+	"ConfirQty": 6364.72,
+	"Crd": "/Date(1501082655000)/",
+	"Edatu": "/Date(1427037855000)/",
+	"Mbdat": "/Date(1014045855000)/",
+	"Gidate": "/Date(1322666655000)/",
+	"Vrkme": "Vrkme 2",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%202')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 1317,
+	"Posnr": "Posnr 3",
+	"Kwert": 9888.31,
+	"Matnr": "Matnr 3",
+	"Kdmat": "Kdmat 3",
+	"Waerk": "Waerk 3",
+	"Aumng": 4740.67,
+	"Werks": "Werks 3",
+	"OrderQty": 7875.11,
+	"ConfirQty": 2124.33,
+	"Crd": "/Date(1554909855000)/",
+	"Edatu": "/Date(1560785055000)/",
+	"Mbdat": "/Date(1279725855000)/",
+	"Gidate": "/Date(1272381855000)/",
+	"Vrkme": "Vrkme 3",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%203')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 4065.19,
+	"Posnr": "Posnr 4",
+	"Kwert": 2343.69,
+	"Matnr": "Matnr 4",
+	"Kdmat": "Kdmat 4",
+	"Waerk": "Waerk 4",
+	"Aumng": 3654.41,
+	"Werks": "Werks 4",
+	"OrderQty": 6004.3,
+	"ConfirQty": 2075.05,
+	"Crd": "/Date(1380381855000)/",
+	"Edatu": "/Date(1285946655000)/",
+	"Mbdat": "/Date(1062516255000)/",
+	"Gidate": "/Date(1459956255000)/",
+	"Vrkme": "Vrkme 4",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%204')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 5785.74,
+	"Posnr": "Posnr 5",
+	"Kwert": 2137.19,
+	"Matnr": "Matnr 5",
+	"Kdmat": "Kdmat 5",
+	"Waerk": "Waerk 5",
+	"Aumng": 7221.15,
+	"Werks": "Werks 5",
+	"OrderQty": 1021.76,
+	"ConfirQty": 5815.23,
+	"Crd": "/Date(1431098655000)/",
+	"Edatu": "/Date(1409585055000)/",
+	"Mbdat": "/Date(1352474655000)/",
+	"Gidate": "/Date(1031153055000)/",
+	"Vrkme": "Vrkme 5",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%205')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 2511.21,
+	"Posnr": "Posnr 6",
+	"Kwert": 4124.74,
+	"Matnr": "Matnr 6",
+	"Kdmat": "Kdmat 6",
+	"Waerk": "Waerk 6",
+	"Aumng": 5127.81,
+	"Werks": "Werks 6",
+	"OrderQty": 8891.3,
+	"ConfirQty": 6555.94,
+	"Crd": "/Date(1187537055000)/",
+	"Edatu": "/Date(1207322655000)/",
+	"Mbdat": "/Date(983373855000)/",
+	"Gidate": "/Date(1402154655000)/",
+	"Vrkme": "Vrkme 6",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%206')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 5690.29,
+	"Posnr": "Posnr 7",
+	"Kwert": 2362.81,
+	"Matnr": "Matnr 7",
+	"Kdmat": "Kdmat 7",
+	"Waerk": "Waerk 7",
+	"Aumng": 3126.15,
+	"Werks": "Werks 7",
+	"OrderQty": 736.12,
+	"ConfirQty": 3397.16,
+	"Crd": "/Date(1206545055000)/",
+	"Edatu": "/Date(1245252255000)/",
+	"Mbdat": "/Date(1446132255000)/",
+	"Gidate": "/Date(982077855000)/",
+	"Vrkme": "Vrkme 7",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%207')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 9651.26,
+	"Posnr": "Posnr 8",
+	"Kwert": 3019.74,
+	"Matnr": "Matnr 8",
+	"Kdmat": "Kdmat 8",
+	"Waerk": "Waerk 8",
+	"Aumng": 5852.51,
+	"Werks": "Werks 8",
+	"OrderQty": 8745.07,
+	"ConfirQty": 7842.02,
+	"Crd": "/Date(1502983455000)/",
+	"Edatu": "/Date(1364397855000)/",
+	"Mbdat": "/Date(1429197855000)/",
+	"Gidate": "/Date(1308497055000)/",
+	"Vrkme": "Vrkme 8",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%208')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 4548.8,
+	"Posnr": "Posnr 9",
+	"Kwert": 9332.75,
+	"Matnr": "Matnr 9",
+	"Kdmat": "Kdmat 9",
+	"Waerk": "Waerk 9",
+	"Aumng": 1286.92,
+	"Werks": "Werks 9",
+	"OrderQty": 8133.26,
+	"ConfirQty": 7098.74,
+	"Crd": "/Date(1126365855000)/",
+	"Edatu": "/Date(1303313055000)/",
+	"Mbdat": "/Date(1266593055000)/",
+	"Gidate": "/Date(1215357855000)/",
+	"Vrkme": "Vrkme 9",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%209')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}, {
+	"Netwr": 1500.5,
+	"Posnr": "Posnr 10",
+	"Kwert": 5824.18,
+	"Matnr": "Matnr 10",
+	"Kdmat": "Kdmat 10",
+	"Waerk": "Waerk 10",
+	"Aumng": 2181.07,
+	"Werks": "Werks 10",
+	"OrderQty": 5186.28,
+	"ConfirQty": 3977.14,
+	"Crd": "/Date(1375111455000)/",
+	"Edatu": "/Date(1018279455000)/",
+	"Mbdat": "/Date(1051802655000)/",
+	"Gidate": "/Date(1390922655000)/",
+	"Vrkme": "Vrkme 10",
+	"__metadata": {
+		"uri": "ResultSet('Posnr%2010')",
+		"type": "ZSAPA_SRV.Result"
+	}
+}]

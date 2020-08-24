@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="Price Details" contentWidth="500px">
+		<content>
+			<f:SimpleForm editable="true" singleContainerFullSize="true" layout="ResponsiveGridLayout" labelSpanS="7" emptySpanS="1">
+				<Label text="Cust Unit Price"/>
+				<!--<u:Currency value="{Netwr>/Custunitprice}" currency="{transactionAmount/currency}" maxPrecision="2" useSymbol="false"/>-->
+				<Text text="{parts:[{path:'Netwr>/Custunitprice'},{path:'Netwr>/Waerk'}],formatter:'.formatter.netPriceFormatter'}"/>
+				<Label text="Extd Cust Price"/>
+				<Text text="{parts:[{path:'Netwr>/Extdcustprice'},{path:'Netwr>/Waerk'}],formatter:'.formatter.netPriceFormatter'}"/>
+				<Label text="List price per unit"/>
+				<Text text="{parts:[{path:'Netwr>/Listpriceperunit'},{path:'Netwr>/Waerk'}],formatter:'.formatter.netPriceFormatter'}"/>
+				<Label text="Normal Disc (%)"/>
+				<Text text="{Netwr>/Normaldisc}"/>
+			</f:SimpleForm>
+		</content>
+		<endButton>
+			<Button text="Close" press="netwrDialogClose"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

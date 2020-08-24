@@ -1,0 +1,6 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog title="Document Type" noDataText="No Document Type found" items="{DocType>/d/results}" class="sapUiPopupWithPadding"
+		search="vhDocTypeSearch" liveChange="vhDocTypeSearch" confirm="vhDocTypeConfirm">
+		<StandardListItem title="{DocType>Auart}" description="{DocType>Bezei}"></StandardListItem>
+	</SelectDialog>
+</core:FragmentDefinition>

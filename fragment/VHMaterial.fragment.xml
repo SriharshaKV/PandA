@@ -1,0 +1,6 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog title="Material" noDataText="No Material found" items="{MaterialJ>/d/results}" class="sapUiPopupWithPadding"
+		search="vhMatnrSearch" liveChange="vhMatnrSearch" confirm="vhMatnrConfrim">
+		<StandardListItem title="{MaterialJ>Matnr}" description="{MaterialJ>Maktg}"></StandardListItem>
+	</SelectDialog>
+</core:FragmentDefinition>

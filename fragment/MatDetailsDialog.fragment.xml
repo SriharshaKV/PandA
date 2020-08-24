@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog title="Material Details" contentWidth="500px">
+		<content>
+			<f:SimpleForm editable="true" singleContainerFullSize="true" layout="ResponsiveGridLayout" labelSpanS="7" emptySpanS="1">
+				<Label text="Package Restriction Qty"/>
+				<Text text="{parts:[{path:'MatDetails>/Deliveryunit'},{path:'MatDetails>/Vrkme'}],formatter:'.formatter.netPriceFormatter'}"/>
+				<Label text="Min Order Quantity"/>
+				<Text text="{parts:[{path:'MatDetails>/Minorderqty'},{path:'MatDetails>/Vrkme'}],formatter:'.formatter.netPriceFormatter'}"/>
+				<Label text="Product Hierarchy"/>
+				<Text text="{MatDetails>/Producthierarchy}"/>
+				<Label text="Returnable"/>
+				<Text text="{path:'MatDetails>/Returnable',formatter:'.formatter.getReturnable'}"/>
+				<Label text="Gross weight"/>
+				<Text text="{parts:[{path:'MatDetails>/GrossWeight'},{path:'MatDetails>/WeightUom'}],formatter:'.formatter.netPriceFormatter'}"/>
+				<Label text="Net weight"/>
+				<Text text="{parts:[{path:'MatDetails>/NetWeight'},{path:'MatDetails>/WeightUom'}],formatter:'.formatter.netPriceFormatter'}"/>
+				<Label text="Volume"/>
+				<Text text="{parts:[{path:'MatDetails>/Volume'},{path:'MatDetails>/VolumeUom'}],formatter:'.formatter.netPriceFormatter'}"/>
+			</f:SimpleForm>
+		</content>
+		<!--<beginButton>-->
+		<!--	<Button text="MM03" press="onMM03Btn"/>-->
+		<!--</beginButton>-->
+		<endButton>
+			<Button text="Close" press="matnrDialogClose"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

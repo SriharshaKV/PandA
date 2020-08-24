@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<TableSelectDialog noDataText="No Custom Material Found" items="{CustMatnr>/d/results}" title="Select Customer Material"
+		search="vhCustMatnrSearch" liveChange="vhCustMatnrSearch" confirm="vhCustMatnrConfrim" cancel="vhCustMatnrConfrim" contentWidth="400px">
+		<ColumnListItem>
+			<cells>
+				<Text text="{CustMatnr>Kdmat}"/>
+				<Text text="{CustMatnr>Matnr}"/>
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column>
+				<header>
+					<Label text="Customer Material" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Material" design="Bold"/>
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,136 @@
+{
+    "resources": [
+        {
+            "name": ".user.project.json"
+        },
+        {
+            "name": "resources.json",
+            "merged": true
+        },
+        {
+            "name": "fragment/BusyDialog.fragment.xml"
+        },
+        {
+            "name": "fragment/VHEAN.fragment.xml"
+        },
+        {
+            "name": "fragment/VHDivision.fragment.xml"
+        },
+        {
+            "name": "fragment/BusySOCreation.fragment.xml"
+        },
+        {
+            "name": "fragment/NetwrDetails.fragment.xml"
+        },
+        {
+            "name": "fragment/MessagePopover.fragment.xml"
+        },
+        {
+            "name": "fragment/VHSODocType.fragment.xml"
+        },
+        {
+            "name": "fragment/VHMaterial.fragment.xml"
+        },
+        {
+            "name": "fragment/VHSalesOrg.fragment.xml"
+        },
+        {
+            "name": "fragment/PONumber.fragment.xml"
+        },
+        {
+            "name": "fragment/VHSold2Party.fragment.xml"
+        },
+        {
+            "name": "fragment/UnconfirmQuantity.fragment.xml"
+        },
+        {
+            "name": "fragment/MatDetailsDialog.fragment.xml"
+        },
+        {
+            "name": "fragment/VHPlant.fragment.xml"
+        },
+        {
+            "name": "fragment/DatesDisplay.fragment.xml"
+        },
+        {
+            "name": "fragment/VHCustMaterial.fragment.xml"
+        },
+        {
+            "name": "fragment/VHShip2Party.fragment.xml"
+        },
+        {
+            "name": "fragment/VHDistributionChannel.fragment.xml"
+        },
+        {
+            "name": "fragment/VHShpCondition.fragment.xml"
+        },
+        {
+            "name": ".project.json"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "model/formatter.js"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "extended_runnable_file.html"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "controller/Result.controller.js"
+        },
+        {
+            "name": "controller/Home.controller.js"
+        },
+        {
+            "name": "localService/mockdata/ItemSet.json"
+        },
+        {
+            "name": "localService/mockdata/HeaderSet.json"
+        },
+        {
+            "name": "localService/mockdata/ResultSet.json"
+        },
+        {
+            "name": "localService/ZUI5_SEARCH_HELP_SRV/metadata.xml"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "view/Result.view.xml"
+        },
+        {
+            "name": "view/Home.view.xml"
+        }
+    ]
+}

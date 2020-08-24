@@ -1,0 +1,35 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<TableSelectDialog noDataText="No Division found" items="{Division>/d/results}" title="Select Division" search="vhDivisionSearch"
+		liveChange="vhDivisionSearch" confirm="vhDivisionConfrim" cancel="vhDivisionConfrim" contentWidth="600px">
+		<ColumnListItem>
+			<cells>
+				<Text text="{Division>Vkorg}"/>
+				<Text text="{Division>Vtweg}"/>
+				<Text text="{Division>Spart}"/>
+				<Text text="{Division>VtextSpa}"/>
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column>
+				<header>
+					<Label text="Sales Organization" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Distribution Channel" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Division" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Description" design="Bold"/>
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>

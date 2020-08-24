@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<TableSelectDialog noDataText="No EAN/UPC found" items="{EAN>/d/results}" title="Select Customer Material" search="vhEANSearch"
+		liveChange="vhEANSearch" confirm="vhEANConfrim" cancel="vhEANConfrim" contentWidth="400px">
+		<ColumnListItem>
+			<cells>
+				<Text text="{EAN>Ean11}"/>
+				<Text text="{EAN>Matnr}"/>
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column>
+				<header>
+					<Label text="EAN/UPC" design="Bold"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Material" design="Bold"/>
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>
